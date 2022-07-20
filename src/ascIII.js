@@ -1,0 +1,1 @@
+export const array = [6,8,9]

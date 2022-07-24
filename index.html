@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <canvas id="main_canvas"></canvas>
+      <div class="controls">
+        <label for="resolution" id="resolution_label">Resolution 5 px</label>
+        <input
+          type="range"
+          name="resolution"
+          id="resolution"
+          min="1"
+          max="20"
+          value="5"
+        />
+      </div>
+      <input type="file" id="file_input" accept="image/jpeg, image/png" />
+    </div>
+
     <script src="./src/main.js" type="module"></script>
   </body>
 </html>

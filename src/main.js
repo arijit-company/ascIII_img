@@ -5,7 +5,7 @@ const main_canvas = document.getElementById("main_canvas");
 const file_input = document.getElementById("file_input");
 
 const ctx = main_canvas.getContext("2d");
-const image_One = new Image(400, 400);
+const image_One = new Image(600, 600);
 let newAsciiEffect;
 
 file_input.addEventListener("change", (e) => {
@@ -34,5 +34,6 @@ function drawActualImage() {
     image_One.height,
     image_One
   );
+  newAsciiEffect.draw(4);
   console.log(newAsciiEffect);
 }
